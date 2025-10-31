@@ -79,7 +79,10 @@ class MySplashScreen extends StatelessWidget {
               child: SizedBox(
                 height: 25,
                 width: double.infinity,
-                child: ElevatedButton(onPressed: (){},
+                child: ElevatedButton(onPressed: (){
+                  
+                  print("di click");
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green, 
                 ), 
@@ -92,14 +95,10 @@ class MySplashScreen extends StatelessWidget {
               ),
               ),
             ),
+            SizedBox(height: 30,)
             
         
           ],
-          //2.BUAT TITLE Welcome
-          //3. buat subtitle lebih kecil warna berbeda
-          //4. buat bulatann kecil ada 3 melebar ( row)
-          //5. buat butto continue dengan warna putih
-          
         ),
       ),
     );
