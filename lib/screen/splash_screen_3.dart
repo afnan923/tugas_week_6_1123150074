@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_splash/screen/splash_screen_2.dart';
 
 
-class MySplashScreen extends StatelessWidget {
-  const MySplashScreen({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +21,13 @@ class MySplashScreen extends StatelessWidget {
                 color: Colors.green,
                 shape: BoxShape.circle,
                 image: DecorationImage(image: 
-                AssetImage("assets/images/11.png"),
+                AssetImage("assets/images/19.png"),
                 fit: BoxFit.cover
                 ),
               ),
             ),
             SizedBox(height: 20,),
-            Text("Welcome",
+            Text("Welcome 3",
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold
@@ -50,7 +49,7 @@ class MySplashScreen extends StatelessWidget {
               height: 10,
               width: 10,
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.green[100]!,
                 shape: BoxShape.circle,
                 ),
               ),
@@ -68,7 +67,7 @@ class MySplashScreen extends StatelessWidget {
               height: 10,
               width: 10,
               decoration: BoxDecoration(
-                color: Colors.green[100]!,
+                color: Colors.green,
                 shape: BoxShape.circle,
                 ),
               ),
@@ -82,8 +81,7 @@ class MySplashScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(onPressed: (){
                   
-                  Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) => SplashScreen2()));
+                  print("di click");
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green, 

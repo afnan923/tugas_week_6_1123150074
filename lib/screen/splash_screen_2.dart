@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_splash/screen/splash_screen_2.dart';
+import 'package:flutter_splash/screen/splash_screen_3.dart';
 
 
-class MySplashScreen extends StatelessWidget {
-  const MySplashScreen({super.key});
+class SplashScreen2 extends StatelessWidget {
+  const SplashScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +22,13 @@ class MySplashScreen extends StatelessWidget {
                 color: Colors.green,
                 shape: BoxShape.circle,
                 image: DecorationImage(image: 
-                AssetImage("assets/images/11.png"),
+                AssetImage("assets/images/16.png"),
                 fit: BoxFit.cover
                 ),
               ),
             ),
             SizedBox(height: 20,),
-            Text("Welcome",
+            Text("Welcome 2",
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold
@@ -50,7 +50,7 @@ class MySplashScreen extends StatelessWidget {
               height: 10,
               width: 10,
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.green[100]!,
                 shape: BoxShape.circle,
                 ),
               ),
@@ -59,7 +59,7 @@ class MySplashScreen extends StatelessWidget {
               height: 10,
               width: 10,
               decoration: BoxDecoration(
-                color: Colors.green[100]!,
+                color: Colors.green,
                 shape: BoxShape.circle,
                 ),
               ),
@@ -83,7 +83,7 @@ class MySplashScreen extends StatelessWidget {
                 child: ElevatedButton(onPressed: (){
                   
                   Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) => SplashScreen2()));
+                  MaterialPageRoute(builder: (context) => SplashScreen3()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green, 
