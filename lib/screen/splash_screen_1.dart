@@ -7,17 +7,33 @@ class MySplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 50),
-          Container(
-          width: 250,
-          height: 250,
-          decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: Colors.amber),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          //TODO
+          //1.BUAT IMAGE dalam container
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 20,),
+            Container(
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                color: Colors.amber,
+                shape: BoxShape.circle,
+                image: DecorationImage(image: 
+                AssetImage("assets/images/11.png"),
+                fit: BoxFit.cover
+                ),
+              ),
+            ),
+        
+          ],
+          //2.BUAT TITLE Welcome
+          //3. buat subtitle lebih kecil warna berbeda
+          //4. buat bulatann kecil ada 3 melebar ( row)
+          //5. buat butto continue dengan warna putih
+          
+        ),
       ),
     );
   }
