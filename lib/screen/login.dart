@@ -50,7 +50,7 @@ class Login extends StatelessWidget {
                 ),
                 SizedBox(height: 10,),
                 TextField(
-                  keyboardType: TextInputType.visiblePassword,
+                  obscureText: true,
                   decoration: InputDecoration(
                     labelText: "Password",
                     hintText: "Masukan Password",
@@ -72,6 +72,39 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 2,),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                  'Lupa Password?',
+                  style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                  ),
+                  ),
+                  ),
+                 SizedBox(height: 20,),
+            Container(
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 25,
+                width: double.infinity,
+                child: ElevatedButton(onPressed: (){
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green, 
+                ), 
+                child: Text("Login",
+                style: TextStyle(
+                fontSize: 12,
+                color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+                  
+
               ],
             ),
           ),
