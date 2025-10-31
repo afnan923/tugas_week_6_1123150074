@@ -18,7 +18,7 @@ class MySplashScreen extends StatelessWidget {
               height: 200,
               width: 200,
               decoration: BoxDecoration(
-                color: Colors.amber,
+                color: Colors.green,
                 shape: BoxShape.circle,
                 image: DecorationImage(image: 
                 AssetImage("assets/images/11.png"),
@@ -72,7 +72,27 @@ class MySplashScreen extends StatelessWidget {
                 ),
               ),
               ],
-            )
+            ),
+            SizedBox(height: 20,),
+            Container(
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 25,
+                width: double.infinity,
+                child: ElevatedButton(onPressed: (){},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green, 
+                ), 
+                child: Text("Continue",
+                style: TextStyle(
+                fontSize: 12,
+                color: Colors.white,
+              ),
+              ),
+              ),
+              ),
+            ),
+            
         
           ],
           //2.BUAT TITLE Welcome
