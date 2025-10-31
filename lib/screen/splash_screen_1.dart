@@ -26,6 +26,21 @@ class MySplashScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 20,),
+            Text("Welcome",
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            SizedBox(height: 2,),
+            Text("Selamat datang orang orang\n jika anda bukan orang orang harus orang orang",
+            textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14.0,
+                color: Colors.green
+              ),
+            ),
         
           ],
           //2.BUAT TITLE Welcome
