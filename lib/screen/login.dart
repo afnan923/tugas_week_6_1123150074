@@ -13,8 +13,11 @@ class Login extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 5),
-                const Icon(Icons.qr_code_scanner_sharp,
-                    size: 60, color: Colors.blueGrey),
+                const Icon(
+                  Icons.qr_code_scanner_sharp,
+                  size: 60,
+                  color: Colors.blueGrey,
+                ),
                 const SizedBox(height: 10),
                 const Text(
                   "Selamat Datang",
@@ -48,7 +51,7 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                SizedBox(height: 10),
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -72,54 +75,63 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 2,),
+                SizedBox(height: 2),
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                  onPressed: () {},
-                  child: Text(
-                  'Lupa Password?',
-                  style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                    onPressed: () {},
+                    child: Text(
+                      'Lupa Password?',
+                      style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                    ),
                   ),
-                  ),
-                  ),
-                 SizedBox(height: 20,),
-            Container(
-              margin: EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 25,
-                width: double.infinity,
-                child: ElevatedButton(onPressed: (){
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green, 
-                ), 
-                child: Text("Login",
-                style: TextStyle(
-                fontSize: 12,
-                color: Colors.white,
+                ),
+                SizedBox(height: 20),
+                Container(
+                  margin: EdgeInsets.only(left: 40, right: 40),
+                  child: SizedBox(
+                    height: 25,
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                      ),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(fontSize: 12, color: Colors.white),
                       ),
                     ),
                   ),
                 ),
-              ),
-              Row(
-                            children: [
-                              Expanded(child: Divider(color: Colors.grey[300],)),
-                              Padding(padding: const EdgeInsets.symmetric(horizontal: 16),
-                              child: Text('atau',style: TextStyle(color: Colors.grey[600]))),
-                              Expanded(child: Divider(color: Colors.grey[300],)),
-                            ],
-                            
-                          ),
-                          OutlinedButton.icon(onPressed: (){},
-                          icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
-                          label: Text('Login dengan Google', style: TextStyle(color: Colors.grey),),
-                          style: OutlinedButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(vertical: 12),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(20),
-                            side: BorderSide(color: Colors.grey[300]!),)
-                          ),)
+                Row(
+                  children: [
+                    Expanded(child: Divider(color: Colors.grey[300])),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        'atau',
+                        style: TextStyle(color: Colors.grey[600]),
+                      ),
+                    ),
+                    Expanded(child: Divider(color: Colors.grey[300])),
+                  ],
+                ),
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
+                  label: Text(
+                    'Login dengan Google',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusGeometry.circular(20),
+                      side: BorderSide(color: Colors.grey[300]!),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
